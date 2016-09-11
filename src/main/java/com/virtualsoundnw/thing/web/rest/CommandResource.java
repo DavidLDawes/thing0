@@ -4,12 +4,14 @@ import com.codahale.metrics.annotation.Timed;
 import com.virtualsoundnw.thing.service.CommandService;
 import com.virtualsoundnw.thing.web.rest.util.HeaderUtil;
 import com.virtualsoundnw.thing.service.dto.CommandDTO;
+import com.virtualsoundnw.thing.security.AuthoritiesConstants;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.annotation.Secured;
 import org.springframework.web.bind.annotation.*;
 
 import javax.inject.Inject;
@@ -44,6 +46,7 @@ public class CommandResource {
         method = RequestMethod.POST,
         produces = MediaType.APPLICATION_JSON_VALUE)
     @Timed
+    @Secured(AuthoritiesConstants.DEVICE)
     public ResponseEntity<CommandDTO> createCommand(@Valid @RequestBody CommandDTO commandDTO) throws URISyntaxException {
         log.debug("REST request to save Command : {}", commandDTO);
         if (commandDTO.getId() != null) {
@@ -68,6 +71,7 @@ public class CommandResource {
         method = RequestMethod.PUT,
         produces = MediaType.APPLICATION_JSON_VALUE)
     @Timed
+    @Secured(AuthoritiesConstants.DEVICE)
     public ResponseEntity<CommandDTO> updateCommand(@Valid @RequestBody CommandDTO commandDTO) throws URISyntaxException {
         log.debug("REST request to update Command : {}", commandDTO);
         if (commandDTO.getId() == null) {
@@ -88,6 +92,7 @@ public class CommandResource {
         method = RequestMethod.GET,
         produces = MediaType.APPLICATION_JSON_VALUE)
     @Timed
+    @Secured(AuthoritiesConstants.USER)
     public List<CommandDTO> getAllCommands() {
         log.debug("REST request to get all Commands");
         return commandService.findAll();
@@ -103,6 +108,7 @@ public class CommandResource {
         method = RequestMethod.GET,
         produces = MediaType.APPLICATION_JSON_VALUE)
     @Timed
+    @Secured(AuthoritiesConstants.USER)
     public ResponseEntity<CommandDTO> getCommand(@PathVariable Long id) {
         log.debug("REST request to get Command : {}", id);
         CommandDTO commandDTO = commandService.findOne(id);
@@ -123,6 +129,7 @@ public class CommandResource {
         method = RequestMethod.DELETE,
         produces = MediaType.APPLICATION_JSON_VALUE)
     @Timed
+    @Secured(AuthoritiesConstants.ADMIN)
     public ResponseEntity<Void> deleteCommand(@PathVariable Long id) {
         log.debug("REST request to delete Command : {}", id);
         commandService.delete(id);
