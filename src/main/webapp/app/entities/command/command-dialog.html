@@ -1,0 +1,122 @@
+
+<form name="editForm" role="form" novalidate ng-submit="vm.save()" show-validation>
+
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                ng-click="vm.clear()">&times;</button>
+        <h4 class="modal-title" id="myCommandLabel" translate="thingApp.command.home.createOrEditLabel">Create or edit a Command</h4>
+    </div>
+    <div class="modal-body">
+        <jhi-alert-error></jhi-alert-error>
+        <div class="form-group" ng-show="vm.command.id">
+            <label for="id" translate="global.field.id">ID</label>
+            <input type="text" class="form-control" id="id" name="id"
+                    ng-model="vm.command.id" readonly />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="thingApp.command.date" for="field_date">Date</label>
+                <div class="input-group">
+                    <input id="field_date" type="text" class="form-control" name="date" uib-datepicker-popup="{{dateformat}}" ng-model="vm.command.date" is-open="vm.datePickerOpenStatus.date"
+                    required/>
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default" ng-click="vm.openCalendar('date')"><i class="glyphicon glyphicon-calendar"></i></button>
+                    </span>
+                </div>
+            <div ng-show="editForm.date.$invalid">
+                <p class="help-block"
+                    ng-show="editForm.date.$error.required" translate="entity.validation.required">
+                    This field is required.
+                </p>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="thingApp.command.user" for="field_user">User</label>
+            <input type="number" class="form-control" name="user" id="field_user"
+                    ng-model="vm.command.user"
+                    required />
+            <div ng-show="editForm.user.$invalid">
+                <p class="help-block"
+                    ng-show="editForm.user.$error.required" translate="entity.validation.required">
+                    This field is required.
+                </p>
+                <p class="help-block"
+                    ng-show="editForm.user.$error.number" translate="entity.validation.number">
+                    This field should be a number.
+                </p>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="thingApp.command.request" for="field_request">Request</label>
+            <input type="text" class="form-control" name="request" id="field_request"
+                    ng-model="vm.command.request"
+                    required ng-maxlength="1024" />
+            <div ng-show="editForm.request.$invalid">
+                <p class="help-block"
+                    ng-show="editForm.request.$error.required" translate="entity.validation.required">
+                    This field is required.
+                </p>
+                <p class="help-block"
+                    ng-show="editForm.request.$error.maxlength" translate="entity.validation.maxlength" translate-value-max="1024">
+                    This field cannot be longer than 1024 characters.
+                </p>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="thingApp.command.response" for="field_response">Response</label>
+            <input type="text" class="form-control" name="response" id="field_response"
+                    ng-model="vm.command.response"
+                    ng-maxlength="1024" />
+            <div ng-show="editForm.response.$invalid">
+                <p class="help-block"
+                    ng-show="editForm.response.$error.maxlength" translate="entity.validation.maxlength" translate-value-max="1024">
+                    This field cannot be longer than 1024 characters.
+                </p>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="thingApp.command.status" for="field_status">Status</label>
+            <input type="text" class="form-control" name="status" id="field_status"
+                    ng-model="vm.command.status"
+                    ng-maxlength="1024" />
+            <div ng-show="editForm.status.$invalid">
+                <p class="help-block"
+                    ng-show="editForm.status.$error.maxlength" translate="entity.validation.maxlength" translate-value-max="1024">
+                    This field cannot be longer than 1024 characters.
+                </p>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="thingApp.command.started" for="field_started">Started</label>
+            <input type="checkbox" class="form-control" name="started" id="field_started"
+                    ng-model="vm.command.started"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="thingApp.command.completed" for="field_completed">Completed</label>
+            <input type="checkbox" class="form-control" name="completed" id="field_completed"
+                    ng-model="vm.command.completed"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="thingApp.command.error" for="field_error">Error</label>
+            <input type="checkbox" class="form-control" name="error" id="field_error"
+                    ng-model="vm.command.error"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="thingApp.command.failed" for="field_failed">Failed</label>
+            <input type="checkbox" class="form-control" name="failed" id="field_failed"
+                    ng-model="vm.command.failed"
+                     />
+        </div>
+
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="vm.clear()">
+            <span class="glyphicon glyphicon-ban-circle"></span>&nbsp;<span translate="entity.action.cancel">Cancel</span>
+        </button>
+        <button type="submit" ng-disabled="editForm.$invalid || vm.isSaving" class="btn btn-primary">
+            <span class="glyphicon glyphicon-save"></span>&nbsp;<span translate="entity.action.save">Save</span>
+        </button>
+    </div>
+</form>

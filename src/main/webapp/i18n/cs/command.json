@@ -1,0 +1,30 @@
+{
+    "thingApp": {
+        "command" : {
+            "home": {
+                "title": "Commands",
+                "createLabel": "Vytvořit Command",
+                "createOrEditLabel": "Vytvořit nebo upravit Command",
+                "search": "Vyhledat Command"
+            },
+            "created": "Byl vytvořen potomek entity Command s identifikátorem {{ param }}",
+            "updated": "Potomek entity Command s identifikátorem {{ param }} byl upravený.",
+            "deleted": "Potomek entity Command s identifikátorem {{ param }} bol smazaný.",
+            "delete": {
+                "question": "Jste si jisti, že chcete smazat Command {{ id }}?"
+            },
+            "detail": {
+                "title": "Command"
+            },
+            "date": "Date",
+            "user": "User",
+            "request": "Request",
+            "response": "Response",
+            "status": "Status",
+            "started": "Started",
+            "completed": "Completed",
+            "error": "Error",
+            "failed": "Failed"
+        }
+    }
+}

@@ -1,0 +1,55 @@
+
+<div>
+    <h2><span translate="thingApp.command.detail.title">Command</span> {{vm.command.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="dl-horizontal jh-entity-details">
+        <dt><span translate="thingApp.command.date">Date</span></dt>
+        <dd>
+            <span>{{vm.command.date | date:'mediumDate'}}</span>
+        </dd>
+        <dt><span translate="thingApp.command.user">User</span></dt>
+        <dd>
+            <span>{{vm.command.user}}</span>
+        </dd>
+        <dt><span translate="thingApp.command.request">Request</span></dt>
+        <dd>
+            <span>{{vm.command.request}}</span>
+        </dd>
+        <dt><span translate="thingApp.command.response">Response</span></dt>
+        <dd>
+            <span>{{vm.command.response}}</span>
+        </dd>
+        <dt><span translate="thingApp.command.status">Status</span></dt>
+        <dd>
+            <span>{{vm.command.status}}</span>
+        </dd>
+        <dt><span translate="thingApp.command.started">Started</span></dt>
+        <dd>
+            <span>{{vm.command.started}}</span>
+        </dd>
+        <dt><span translate="thingApp.command.completed">Completed</span></dt>
+        <dd>
+            <span>{{vm.command.completed}}</span>
+        </dd>
+        <dt><span translate="thingApp.command.error">Error</span></dt>
+        <dd>
+            <span>{{vm.command.error}}</span>
+        </dd>
+        <dt><span translate="thingApp.command.failed">Failed</span></dt>
+        <dd>
+            <span>{{vm.command.failed}}</span>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            ui-sref="{{ vm.previousState }}"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span translate="entity.action.back"> Back</span>
+    </button>
+
+    <button type="button" ui-sref="command-detail.edit({id:vm.command.id})" class="btn btn-primary">
+        <span class="glyphicon glyphicon-pencil"></span>
+        <span class="hidden-xs hidden-sm" translate="entity.action.edit"> Edit</span>
+    </button>
+</div>

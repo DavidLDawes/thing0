@@ -1,0 +1,25 @@
+{
+    "thingApp": {
+        "data" : {
+            "home": {
+                "title": "Data",
+                "createLabel": "नवीन Data तयार करा",
+                "createOrEditLabel": "Data तयार किंवा संपादित करा",
+                "search": "Data शोधा"
+            },
+            "created": "Data [identifier: {{ param }}] तयार आहे",
+            "updated": "Data [identifier: {{ param }}] सुधारित केले आहे",
+            "deleted": "Data [identifier: {{ param }}] हटविले आहे",
+            "delete": {
+                "question": "Data [id: {{ id }}] काढून टाकण्याबाबत पुष्टी?"
+            },
+            "detail": {
+                "title": "Data"
+            },
+            "date": "Date",
+            "json": "Json",
+            "xml": "Xml",
+            "text": "Text"
+        }
+    }
+}

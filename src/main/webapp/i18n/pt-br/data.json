@@ -1,0 +1,25 @@
+{
+    "thingApp": {
+        "data" : {
+            "home": {
+                "title": "Data",
+                "createLabel": "Criar novo Data",
+                "createOrEditLabel": "Criar ou editar Data",
+                "search": "Pesquisar por Data"
+            },
+            "created": "Um novo Data é criado com o identificador {{ param }}",
+            "updated": "Um Data é atualizado com o identificador {{ param }}",
+            "deleted": "Um Data é deletado com o identificador {{ param }}",
+            "delete": {
+                "question": "Tem certeza de que deseja excluir Data {{ id }}?"
+            },
+            "detail": {
+                "title": "Data"
+            },
+            "date": "Date",
+            "json": "Json",
+            "xml": "Xml",
+            "text": "Text"
+        }
+    }
+}

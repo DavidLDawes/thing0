@@ -1,0 +1,25 @@
+{
+    "thingApp": {
+        "data" : {
+            "home": {
+                "title": "Data",
+                "createLabel": "Δημιουργήστε ένα νέο Data",
+                "createOrEditLabel": "Δημιουργήστε η επεξεργαστείτε ένα Data",
+                "search": "Αναζήτηση για Data"
+            },
+            "created": "Ένα νέο Data έχει δημιουργηθεί με αναγνωριστικό {{ param }}",
+            "updated": "Ένα Data έχει ενημερωθεί με αναγνωριστικό {{ param }}",
+            "deleted": "Ένα Data έχει διαγραφτεί με αναγνωριστικό {{ param }}",
+            "delete": {
+                "question": "Είστε βέβαιοι όταν θέλετε να διαγράψετε το ακόλουθο Data {{ id }};"
+            },
+            "detail": {
+                "title": "Data"
+            },
+            "date": "Date",
+            "json": "Json",
+            "xml": "Xml",
+            "text": "Text"
+        }
+    }
+}

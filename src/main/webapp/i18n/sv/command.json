@@ -1,0 +1,30 @@
+{
+    "thingApp": {
+        "command" : {
+            "home": {
+                "title": "Commands",
+                "createLabel": "Skapa en ny Command",
+                "createOrEditLabel": "Skapa eller ändra en Command",
+                "search": "Sök efter Command"
+            },
+            "created": "En ny Command är skapad med id {{ param }}",
+            "updated": "En Command är uppdaterad med id  {{ param }}",
+            "deleted": "En Command är borttagen med id  {{ param }}",
+            "delete": {
+                "question": "Är du säker på att du vill ta bort Command {{ id }}?"
+            },
+            "detail": {
+                "title": "Command"
+            },
+            "date": "Date",
+            "user": "User",
+            "request": "Request",
+            "response": "Response",
+            "status": "Status",
+            "started": "Started",
+            "completed": "Completed",
+            "error": "Error",
+            "failed": "Failed"
+        }
+    }
+}

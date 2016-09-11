@@ -1,0 +1,30 @@
+{
+    "thingApp": {
+        "command" : {
+            "home": {
+                "title": "Commands",
+                "createLabel": "Command-ஐ உருவாக்கு",
+                "createOrEditLabel": "Command -ஐ மாற்று (அ) உருவாக்கு",
+                "search": "Search for Command"
+            },
+            "created": "Command புதிதாக உருவாக்கப்பட்டது, அடையாளம் {{ param }}",
+            "updated": "Command மாற்றப்பட்டது, அடையாளம்  {{ param }}",
+            "deleted": "A Command நீக்கப்பட்டது, அடையாளம {{ param }}",
+            "delete": {
+                "question": "நீக்குவதற்கு உறுதி செய் Command {{ id }}?"
+            },
+            "detail": {
+                "title": "Command"
+            },
+            "date": "Date",
+            "user": "User",
+            "request": "Request",
+            "response": "Response",
+            "status": "Status",
+            "started": "Started",
+            "completed": "Completed",
+            "error": "Error",
+            "failed": "Failed"
+        }
+    }
+}

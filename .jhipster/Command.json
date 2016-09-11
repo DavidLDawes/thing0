@@ -1,0 +1,66 @@
+{
+    "fluentMethods": true,
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "date",
+            "fieldType": "LocalDate",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "user",
+            "fieldType": "Long",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "request",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required",
+                "maxlength"
+            ],
+            "fieldValidateRulesMaxlength": "1024"
+        },
+        {
+            "fieldName": "response",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "maxlength"
+            ],
+            "fieldValidateRulesMaxlength": "1024"
+        },
+        {
+            "fieldName": "status",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "maxlength"
+            ],
+            "fieldValidateRulesMaxlength": "1024"
+        },
+        {
+            "fieldName": "started",
+            "fieldType": "Boolean"
+        },
+        {
+            "fieldName": "completed",
+            "fieldType": "Boolean"
+        },
+        {
+            "fieldName": "error",
+            "fieldType": "Boolean"
+        },
+        {
+            "fieldName": "failed",
+            "fieldType": "Boolean"
+        }
+    ],
+    "changelogDate": "20160911164759",
+    "dto": "mapstruct",
+    "service": "serviceImpl",
+    "entityTableName": "command",
+    "pagination": "no"
+}

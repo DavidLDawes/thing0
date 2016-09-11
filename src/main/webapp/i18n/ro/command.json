@@ -1,0 +1,30 @@
+{
+    "thingApp": {
+        "command" : {
+            "home": {
+                "title": "Commands",
+                "createLabel": "Crează o nouă Command",
+                "createOrEditLabel": "Crează sau editează o Command",
+                "search": "Search for Command"
+            },
+            "created": "O nouă Command este creată cu identificatorul {{ param }}",
+            "updated": "O Command este editată cu identificatorul {{ param }}",
+            "deleted": "O Command este stearsă cu identificatorul {{ param }}",
+            "delete": {
+                "question": "Ești sigur că dorești să stergi Command {{ id }}?"
+            },
+            "detail": {
+                "title": "Command"
+            },
+            "date": "Date",
+            "user": "User",
+            "request": "Request",
+            "response": "Response",
+            "status": "Status",
+            "started": "Started",
+            "completed": "Completed",
+            "error": "Error",
+            "failed": "Failed"
+        }
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "thingApp": {
+        "data" : {
+            "home": {
+                "title": "Data",
+                "createLabel": "Crează o nouă Data",
+                "createOrEditLabel": "Crează sau editează o Data",
+                "search": "Search for Data"
+            },
+            "created": "O nouă Data este creată cu identificatorul {{ param }}",
+            "updated": "O Data este editată cu identificatorul {{ param }}",
+            "deleted": "O Data este stearsă cu identificatorul {{ param }}",
+            "delete": {
+                "question": "Ești sigur că dorești să stergi Data {{ id }}?"
+            },
+            "detail": {
+                "title": "Data"
+            },
+            "date": "Date",
+            "json": "Json",
+            "xml": "Xml",
+            "text": "Text"
+        }
+    }
+}

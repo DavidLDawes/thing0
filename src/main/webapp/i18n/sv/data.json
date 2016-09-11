@@ -1,0 +1,25 @@
+{
+    "thingApp": {
+        "data" : {
+            "home": {
+                "title": "Data",
+                "createLabel": "Skapa en ny Data",
+                "createOrEditLabel": "Skapa eller ändra en Data",
+                "search": "Sök efter Data"
+            },
+            "created": "En ny Data är skapad med id {{ param }}",
+            "updated": "En Data är uppdaterad med id  {{ param }}",
+            "deleted": "En Data är borttagen med id  {{ param }}",
+            "delete": {
+                "question": "Är du säker på att du vill ta bort Data {{ id }}?"
+            },
+            "detail": {
+                "title": "Data"
+            },
+            "date": "Date",
+            "json": "Json",
+            "xml": "Xml",
+            "text": "Text"
+        }
+    }
+}

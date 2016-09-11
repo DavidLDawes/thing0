@@ -1,0 +1,30 @@
+{
+    "thingApp": {
+        "command" : {
+            "home": {
+                "title": "Commands",
+                "createLabel": "Create a new Command",
+                "createOrEditLabel": "Create or edit a Command",
+                "search": "Search for Command"
+            },
+            "created": "A new Command is created with identifier {{ param }}",
+            "updated": "A Command is updated with identifier {{ param }}",
+            "deleted": "A Command is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Command {{ id }}?"
+            },
+            "detail": {
+                "title": "Command"
+            },
+            "date": "Date",
+            "user": "User",
+            "request": "Request",
+            "response": "Response",
+            "status": "Status",
+            "started": "Started",
+            "completed": "Completed",
+            "error": "Error",
+            "failed": "Failed"
+        }
+    }
+}

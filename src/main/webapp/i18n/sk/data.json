@@ -1,0 +1,25 @@
+{
+    "thingApp": {
+        "data" : {
+            "home": {
+                "title": "Data",
+                "createLabel": "Pridať Data",
+                "createOrEditLabel": "Pridať alebo upraviť Data",
+                "search": "Vyhľadať Data"
+            },
+            "created": "Bol vytvorený potomok entity Data s identifikátorom {{ param }}",
+            "updated": "Potomok entity Data s identifikátorom {{ param }} bol upravený.",
+            "deleted": "Potomok entity Data s identifikátorom {{ param }} bol vymazaný.",
+            "delete": {
+                "question": "Ste si istý, že chcete vymazať Data {{ id }}?"
+            },
+            "detail": {
+                "title": "Data"
+            },
+            "date": "Date",
+            "json": "Json",
+            "xml": "Xml",
+            "text": "Text"
+        }
+    }
+}

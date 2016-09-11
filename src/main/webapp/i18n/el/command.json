@@ -1,0 +1,30 @@
+{
+    "thingApp": {
+        "command" : {
+            "home": {
+                "title": "Commands",
+                "createLabel": "Δημιουργήστε ένα νέο Command",
+                "createOrEditLabel": "Δημιουργήστε η επεξεργαστείτε ένα Command",
+                "search": "Αναζήτηση για Command"
+            },
+            "created": "Ένα νέο Command έχει δημιουργηθεί με αναγνωριστικό {{ param }}",
+            "updated": "Ένα Command έχει ενημερωθεί με αναγνωριστικό {{ param }}",
+            "deleted": "Ένα Command έχει διαγραφτεί με αναγνωριστικό {{ param }}",
+            "delete": {
+                "question": "Είστε βέβαιοι όταν θέλετε να διαγράψετε το ακόλουθο Command {{ id }};"
+            },
+            "detail": {
+                "title": "Command"
+            },
+            "date": "Date",
+            "user": "User",
+            "request": "Request",
+            "response": "Response",
+            "status": "Status",
+            "started": "Started",
+            "completed": "Completed",
+            "error": "Error",
+            "failed": "Failed"
+        }
+    }
+}

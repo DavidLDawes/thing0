@@ -1,0 +1,25 @@
+{
+    "thingApp": {
+        "data" : {
+            "home": {
+                "title": "Data",
+                "createLabel": "Genera un nuovo Data",
+                "createOrEditLabel": "Genera o modifica un Data",
+                "search": "Cerca Data"
+            },
+            "created": "&Egrave; stato generato un nuovo Data con identificatore { param }}",
+            "updated": "&Egrave; stato aggiornato Data identificato da {{ param }}",
+            "deleted": "&Egrave; stato eliminato Data con identificatore {{ param }}",
+            "delete": {
+                "question": "Sei sicuro di volere eliminare Data {{ id }}?"
+            },
+            "detail": {
+                "title": "Data"
+            },
+            "date": "Date",
+            "json": "Json",
+            "xml": "Xml",
+            "text": "Text"
+        }
+    }
+}

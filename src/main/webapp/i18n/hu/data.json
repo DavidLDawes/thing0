@@ -1,0 +1,25 @@
+{
+    "thingApp": {
+        "data" : {
+            "home": {
+                "title": "Data",
+                "createLabel": "Egy új Data létrehozása",
+                "createOrEditLabel": "Hozzon létre, vagy módosítson Datat",
+                "search": "Search for Data"
+            },
+            "created": "A new Data is created with identifier {{ param }}",
+            "updated": "A Data is updated with identifier {{ param }}",
+            "deleted": "A Data is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Biztos benne, hogy törölni szeretné az Datat {{ id }} azonosítóval?"
+            },
+            "detail": {
+                "title": "Data"
+            },
+            "date": "Date",
+            "json": "Json",
+            "xml": "Xml",
+            "text": "Text"
+        }
+    }
+}

@@ -1,0 +1,30 @@
+{
+    "thingApp": {
+        "command" : {
+            "home": {
+                "title": "Commands",
+                "createLabel": "नवीन Command तयार करा",
+                "createOrEditLabel": "Command तयार किंवा संपादित करा",
+                "search": "Command शोधा"
+            },
+            "created": "Command [identifier: {{ param }}] तयार आहे",
+            "updated": "Command [identifier: {{ param }}] सुधारित केले आहे",
+            "deleted": "Command [identifier: {{ param }}] हटविले आहे",
+            "delete": {
+                "question": "Command [id: {{ id }}] काढून टाकण्याबाबत पुष्टी?"
+            },
+            "detail": {
+                "title": "Command"
+            },
+            "date": "Date",
+            "user": "User",
+            "request": "Request",
+            "response": "Response",
+            "status": "Status",
+            "started": "Started",
+            "completed": "Completed",
+            "error": "Error",
+            "failed": "Failed"
+        }
+    }
+}

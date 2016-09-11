@@ -1,0 +1,30 @@
+{
+    "thingApp": {
+        "command" : {
+            "home": {
+                "title": "Commands",
+                "createLabel": "Command を追加",
+                "createOrEditLabel": "Commandを追加または編集",
+                "search": "Search for Command"
+            },
+            "created": "A new Command is created with identifier {{ param }}",
+            "updated": "A Command is updated with identifier {{ param }}",
+            "deleted": "A Command is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Command {{ id }}を削除してもよろしいですか？"
+            },
+            "detail": {
+                "title": "Command"
+            },
+            "date": "Date",
+            "user": "User",
+            "request": "Request",
+            "response": "Response",
+            "status": "Status",
+            "started": "Started",
+            "completed": "Completed",
+            "error": "Error",
+            "failed": "Failed"
+        }
+    }
+}

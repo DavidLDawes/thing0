@@ -1,0 +1,30 @@
+{
+    "thingApp": {
+        "command" : {
+            "home": {
+                "title": "Commands",
+                "createLabel": "Crear nuevo Command",
+                "createOrEditLabel": "Crear o editar Command",
+                "search": "Search for Command"
+            },
+            "created": "Un nuevo Command ha sido creado con el identificador {{ param }}",
+            "updated": "Un Command ha sido actualizado con el identificador {{ param }}",
+            "deleted": "Un Command ha sido eliminado con el identificador {{ param }}",
+            "delete": {
+                "question": "¿Seguro que quiere eliminar Command {{ id }}?"
+            },
+            "detail": {
+                "title": "Command"
+            },
+            "date": "Date",
+            "user": "User",
+            "request": "Request",
+            "response": "Response",
+            "status": "Status",
+            "started": "Started",
+            "completed": "Completed",
+            "error": "Error",
+            "failed": "Failed"
+        }
+    }
+}

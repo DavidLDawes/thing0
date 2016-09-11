@@ -1,0 +1,30 @@
+{
+    "thingApp": {
+        "command" : {
+            "home": {
+                "title": "Commands",
+                "createLabel": "Egy új Command létrehozása",
+                "createOrEditLabel": "Hozzon létre, vagy módosítson Commandt",
+                "search": "Search for Command"
+            },
+            "created": "A new Command is created with identifier {{ param }}",
+            "updated": "A Command is updated with identifier {{ param }}",
+            "deleted": "A Command is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Biztos benne, hogy törölni szeretné az Commandt {{ id }} azonosítóval?"
+            },
+            "detail": {
+                "title": "Command"
+            },
+            "date": "Date",
+            "user": "User",
+            "request": "Request",
+            "response": "Response",
+            "status": "Status",
+            "started": "Started",
+            "completed": "Completed",
+            "error": "Error",
+            "failed": "Failed"
+        }
+    }
+}
