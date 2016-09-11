@@ -41,11 +41,24 @@ Add the `-h` flag on any command to see how you can use it. For example, `bower 
 
 jhipster generated this app to use mysql in production, so you need to have mysql available, and you need to adjust the src/main/resource/config/application-prod.yml file to use the correct user name and password/
 
+## Optional maven dependency
+
+If you have Maven installed then you can build and launch with mvn, if you want to. For example, the next section uses Maven to get things running fast/
+
 ## Simple fast startup
 
 Use the Maven mvn command with no options and it will serve the app at localhost:8080 by default
 
-    ./mvnw -Pprod clean package
+    mvn
+
+If it all works you'll see the character mapped JHIPSTER string and eventually a success message like this:
+----------------------------------------------------------
+        Application 'thing' is running! Access URLs:
+        Local:          http://127.0.0.1:8080
+        External:       http://10.0.75.1:8080
+----------------------------------------------------------
+
+Now you can open it with your browser at localhost:8080
 
 ## Building for production
 
