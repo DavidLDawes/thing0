@@ -1,6 +1,7 @@
 package com.virtualsoundnw.thing.web.rest;
 
 import com.codahale.metrics.annotation.Timed;
+import com.virtualsoundnw.thing.security.AuthoritiesConstants;
 import com.virtualsoundnw.thing.service.DataService;
 import com.virtualsoundnw.thing.web.rest.util.HeaderUtil;
 import com.virtualsoundnw.thing.service.dto.DataDTO;
@@ -10,6 +11,7 @@ import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.annotation.Secured;
 import org.springframework.web.bind.annotation.*;
 
 import javax.inject.Inject;
@@ -44,6 +46,7 @@ public class DataResource {
         method = RequestMethod.POST,
         produces = MediaType.APPLICATION_JSON_VALUE)
     @Timed
+    @Secured(AuthoritiesConstants.DEVICE)
     public ResponseEntity<DataDTO> createData(@Valid @RequestBody DataDTO dataDTO) throws URISyntaxException {
         log.debug("REST request to save Data : {}", dataDTO);
         if (dataDTO.getId() != null) {
@@ -68,6 +71,7 @@ public class DataResource {
         method = RequestMethod.PUT,
         produces = MediaType.APPLICATION_JSON_VALUE)
     @Timed
+    @Secured(AuthoritiesConstants.ADMIN)
     public ResponseEntity<DataDTO> updateData(@Valid @RequestBody DataDTO dataDTO) throws URISyntaxException {
         log.debug("REST request to update Data : {}", dataDTO);
         if (dataDTO.getId() == null) {
@@ -88,6 +92,7 @@ public class DataResource {
         method = RequestMethod.GET,
         produces = MediaType.APPLICATION_JSON_VALUE)
     @Timed
+    @Secured(AuthoritiesConstants.USER)
     public List<DataDTO> getAllData() {
         log.debug("REST request to get all Data");
         return dataService.findAll();
@@ -103,6 +108,7 @@ public class DataResource {
         method = RequestMethod.GET,
         produces = MediaType.APPLICATION_JSON_VALUE)
     @Timed
+    @Secured(AuthoritiesConstants.USER)
     public ResponseEntity<DataDTO> getData(@PathVariable Long id) {
         log.debug("REST request to get Data : {}", id);
         DataDTO dataDTO = dataService.findOne(id);
@@ -123,10 +129,10 @@ public class DataResource {
         method = RequestMethod.DELETE,
         produces = MediaType.APPLICATION_JSON_VALUE)
     @Timed
+    @Secured(AuthoritiesConstants.ADMIN)
     public ResponseEntity<Void> deleteData(@PathVariable Long id) {
         log.debug("REST request to delete Data : {}", id);
         dataService.delete(id);
         return ResponseEntity.ok().headers(HeaderUtil.createEntityDeletionAlert("data", id.toString())).build();
     }
-
 }
